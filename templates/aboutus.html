@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Diploma</title>
+    <style media="screen">
+      .jumbotron {
+        margin-top: 0px;
+        margin-bottom: 0px;
+      }
+      .jumbotron h1 {
+        text-align: center;
+      }
+      .alert {
+        margin: 0px;
+      }
+    </style>
+    <title></title>
+  </head>
+  <body>
+    {% include "navbar.html" %}
+    <br /><br />
+    <center>
+      <h3 class="alert alert-success" style="margin-bottom: 0px">О нас!</h3>
+    </center>
+    <div class="jumbotron" style="margin-bottom: 0px; margin-top: 0px">
+      <h1 class="display-4">Привет</h1>
+      <p class="lead">
+        Служба, предназначенная для администратора, ученика и учителя. Мы предоставляем онлайн
+         ресурсы, профессиональная поддержка и руководство для всех наших студентов, учителей
+         всякий раз, когда и откуда они решили учиться.
+      </p>
+      <hr class="my-4" />
+      <p>Изучите наш веб-сайт.</p>
+      <p class="lead">
+        <a class="btn btn-success btn-lg" href="/" role="button">Домашняя</a>
+      </p>
+    </div>
+    {% include "footer.html" %}
+  </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Diploma</title>
+    <style media="screen">
+      .jumbotron {
+        margin-top: 0px;
+        margin-bottom: 0px;
+      }
+      .jumbotron h1 {
+        text-align: center;
+      }
+      .alert {
+        margin: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    {% include "navbar.html" %}
+    <br />
+    <br />
+    <div class="jumbotron" style="margin-top: 0px; margin-bottom: 0px">
+      <h1 class="display-4">Здравствуйте {{request.user.first_name}}</h1>
+      <p class="lead">
+        Ваша учетная запись не утверждена до сих пор <br /><br />Наша команда проверяет
+        ваш профиль <br /><br />
+        Скоро ваше поступление будет подтверждено !!!
+      </p>
+      <hr class="my-4" />
+      <p>Проверить позже</p>
+      <p class="lead">
+        <a class="btn btn-success btn-lg" href="/logout" role="button"
+          >Выйти сейчас</a
+        >
+      </p>
+    </div>
+    {% include "footer.html" %}
+  </body>
+</html>

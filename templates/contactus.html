@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Diploma</title>
+</head>
+<body>
+  {% include "navbar.html" %}
+  <br><br>
+  <center>
+    <h4 class='alert alert-success shadow'>Отправьте нам ваш ценный отзыв!</h4>
+    <form method="POST">
+      {% csrf_token %}
+      <div class="form-group">
+        <p>
+        <h5>{{ form.as_p }}</h5>
+        </p>
+        <br>
+        <input type="submit" value="Оставить отзыв" class='btn btn-success'>
+      </div>
+    </form>
+  </center>
+  {% include "footer.html" %}
+</body>
+</html>
